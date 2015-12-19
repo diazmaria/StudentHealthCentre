@@ -1,0 +1,534 @@
+/*!
+ * María Díaz Fuentes
+ * Based on Bootstrap
+*/
+
+@font-face {
+  font-family: 'body-font';
+  src: url(http://allfont.ru/cache/fonts/pt-sans_37660512ac27f770b4231a4d31c0ae96.woff) format('woff'),
+       url(http://allfont.ru/cache/fonts/pt-sans_37660512ac27f770b4231a4d31c0ae96.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: title-font;
+    src: url(fonts/title-font.ttf);
+}
+
+a {
+  background-color: transparent;
+  font-family: title-font !important;
+  font-size: 20px;
+  color: #036E4F;
+}
+
+a:active, a:hover {
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.link:hover {
+	color: rgb(95, 209, 164) !important;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+label {
+	font-size: 17px;
+}
+
+input[type=image] {
+	width: unset !important;
+	padding: unset !important;
+	font-size: 15px;
+	line-height: unset !important;
+	border-radius: unset !important;
+	height: unset !important;
+	background-color: unset !important;
+	background-image: none;
+	border: unset !important;
+	text-align: center;
+}
+
+.img-btn {
+	width: unset !important;
+	padding: unset !important;
+	font-size: 15px;
+	line-height: unset !important;
+	border-radius: unset !important;
+	height: unset !important;
+	background-color: unset !important;
+	background-image: none;
+	border: unset !important;
+	text-align: center;
+}
+
+.btn-patient-panel{
+	margin-top: 10px;
+}
+
+.btn-logout {
+    float:right;
+    margin-bottom:15px;
+	margin-top:15px;
+}
+
+.btn-login {
+    margin-left: 30px !important;
+    margin-top: -10px !important;
+}
+
+.btn-crud{
+	font-size: 19px !important;
+	text-transform: none !important;
+	margin-right: 35px;
+	padding-right: 20px;
+	padding-left: 20px;
+	
+}
+
+.btn-check {
+	margin-left: 25px;
+}
+
+.logout-label { 
+	padding: 8px;
+	border-radius: 8px;
+	min-height: 20px;
+	background-color: #EAFFF8;
+	text-align: center;
+	color: #151515;
+	margin-right:10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border: 1px solid #9AE9BF;
+	float: right;
+	font-size: 16px;
+}
+
+.icon-item {
+	text-align: center;
+}
+
+.icon-section {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 2px solid #9AE9BF;
+}
+
+.page-header {
+	padding-bottom: 9px;
+	margin: 20px 0 20px;
+	border-bottom: 2px solid #9AE9BF;
+}
+
+.page-header-lg {
+	font-size: 30px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+.form-horizontal .form-group {
+	margin-left: -50px !important;
+}
+
+.form-horizontal {
+	padding-top: 30px;
+	background-repeat: no-repeat;
+	background-image: url("http://s8.postimg.org/bgr9a9dqt/background.png");
+}
+
+.background {
+      background-image: url("http://s8.postimg.org/bgr9a9dqt/background.png");
+      padding-top: 30px;
+	  border-top: 2px solid #9AE9BF;
+}
+
+.message:{
+	font-size: 17px !important;
+}
+
+.input-lg {
+	height: 28px;
+	padding: 2px 6px;
+	font-size: 15px;
+	line-height: 1.3333333;
+	border-radius: 5px;
+}
+
+select.input-lg {
+	height: 28px;
+	line-height: 28px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.form-control {
+	display: inline-block;
+    height: 32px;
+    padding: 3px 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: center;
+    color: #2D2D2D;
+    border: 1px solid #BBB;
+}
+
+.form-group-lg .form-control {
+	height: 28px;
+	padding: 2px 6px;
+	font-size: 15px;
+	line-height: 1.3333333;
+	border-radius: 5px;
+}
+
+.form-control-feedback {
+	position: absolute;
+	top: -2px;
+	right: 198px;
+	z-index: 2;
+	display: block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	pointer-events: none;
+}
+
+.form-control-feedback2 {
+	  position: absolute;
+	  top: -2px;
+	  right: 198px;
+	  z-index: 2;
+	  display: block;
+	  width: 38px;
+	  height: 38px;
+	  line-height: 38px;
+	  text-align: center;
+	  pointer-events: none;
+}
+
+.no_message { 
+	display: none;
+	color: #AD0000;
+	display: none;
+	color: #E30000;
+}
+
+.message {
+	display:inline-block !important
+}
+
+.patient-panel {
+    margin-left: 30px;
+}
+
+.text-panel {
+    font-size: 17px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.error-message {
+	background-image: url("./img/background.png");
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 16px;
+	color: rgb(32, 32, 32);
+	min-height: 20px;
+	width: 440px;
+	padding: 8px;
+	background-color: rgb(255, 230, 239) !important;
+	text-align: center !important;
+	font-size: 16px !important;
+	color: #E30000 !important;
+	margin-left: 14px;
+	margin-bottom: 40px;
+	margin-top: -10px;
+	border: 1px solid #FF4136;
+	margin-left: 0px;
+}
+
+.float {
+	margin-left:-15px;
+	margin-right: -15px;
+	font-size: 17px;
+}
+
+.unable{
+    pointer-events:none;
+}
+
+.center{
+	text-align: center;
+}
+
+.SingleCheckbox input[type=checkbox]
+{
+    display: none;
+}
+
+.ListControl input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+.ListControl {
+	margin-left: 20px;
+}
+
+.ListControl label {
+    border: 1px solid #B1B1B1 !important;
+    box-shadow: 0px 0.1em 0.1em rgba(0, 0, 0, 0.2) inset !important;
+    display: inline;
+    cursor: pointer;
+    text-indent: 40px;
+    white-space: nowrap;
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+.ListControl input[type=radio] + label  {
+	display: block;
+	border: 0.0625em solid #C0C0C0;
+	vertical-align: bottom;
+	line-height: 1em;
+	border-radius: 3px;
+	border: 1px solid #B1B1B1 !important;
+	box-shadow: 0px 0.1em 0.1em rgba(0, 0, 0, 0.2) inset !important;
+}
+
+.ListControl input[type=radio]:checked + label::before {
+    color: rgb(28, 165, 130);
+    content: "\e013";
+    font-family: Glyphicons Halflings;
+    font-size: 17px;
+    float:left;
+    margin-left: -41px;
+    padding: 3px;
+    text-align: center;
+    margin-right: -40px;
+}
+
+.SingleCheckbox label  {
+    border: 1px solid #B1B1B1 !important;
+    box-shadow: 0px 0.1em 0.1em rgba(0, 0, 0, 0.2) inset !important;
+    display: inline;
+    cursor: pointer;
+    text-indent: 40px;
+    white-space: nowrap;
+    width: 25px;
+    height: 25px;
+    font-size: 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 12px;       
+}
+
+.SingleCheckbox input[type=checkbox] + label {
+	display: block;
+	border: 0.0625em solid #C0C0C0;
+	vertical-align: bottom;
+	line-height: 1em;
+	border-radius: 3px;
+	border: 1px solid #B1B1B1 !important;
+	box-shadow: 0px 0.1em 0.1em rgba(0, 0, 0, 0.2) inset !important;
+}
+
+.SingleCheckbox input[type=checkbox] + label::before {
+    color: #F54E4E;
+    content: "\e014";
+    font-family: Glyphicons Halflings;
+    font-size: 17px;
+    float:left;
+    margin-left: -41px;
+    padding: 3.3px;
+    text-align: center;
+    margin-right: -40px;
+}
+
+.SingleCheckbox input[type=checkbox]:checked + label::before {
+    color: rgb(28, 165, 130);
+    content: "\e013";
+    font-family: Glyphicons Halflings;
+    font-size: 17px;
+    float:left;
+    margin-left: -41px;
+    padding: 3px;
+    text-align: center;
+    margin-right: -40px;
+}
+
+table {
+	border-color: transparent;
+	text-align: center;
+}
+
+table > thead > tr > th,
+.table > thead > tr > th,
+table > tbody > tr > th,
+.table > tbody > tr > th,
+table > tfoot > tr > th,
+.table > tfoot > tr > th,
+table > thead > tr > td,
+.table > thead > tr > td,
+table > tbody > tr > td,
+.table > tbody > tr > td,
+table > tfoot > tr > td,
+.table > tfoot > tr > td {
+  border-color: transparent;
+  font-size: 17px;
+  padding: 4px;
+}
+
+
+th {
+    text-decoration: underline;
+	text-align: center
+}
+
+th:first-child {
+    text-decoration: none !important;
+}
+
+table input{
+	font-size: 17px !important;
+}
+
+.GridViewPatient input{
+	font-size: 16px !important;
+}
+
+.img-hour {
+    border-radius: 5px !important;
+    margin-top: -9px !important;
+}
+.hourspanel{
+	margin-top: 14px;
+	margin-left: 22px !important;
+}
+
+.hourspanel td {
+    padding-top: 7px !important;
+	margin-top: 12px !important;
+}
+
+.CheckButtonPanel {
+	margin-top: -20px;}
+
+.insertGPButton {
+    margin-left: 314px !important;
+	margin-top: -50px !important;
+}
+
+.insertAppointmentButton {
+	margin-left: 152px !important;
+	margin-top: -50px !important;
+}
+
+.insertPatientButton {
+	margin-left: 51px !important;
+	margin-top: -50px !important;
+}
+
+.GridViewFooter {
+    height: 55.15px;
+}
+
+.GridViewAppointment th, .GridViewAppointment td {
+    padding-right: 10px !important;
+	padding-left: 10px !important;
+}
+
+.GridViewPatient td {
+    font-size: 16px !important;  
+}
+
+.GridViewPatient td:first-child {
+    display: -moz-box !important;
+}
+
+.GridViewPatient input[type=text] {
+    width: 110px;
+}
+
+.GridViewPatient {
+    margin-left: -10px !important;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+	position: fixed;
+	height: 70px;
+	background-color: #FFF;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+	display: center;
+	text-align: center;
+	font-size: 17px;
+}
+
+footer p {
+	margin-top: 20px;
+}
+
+.glyphicon-copyright-mark{
+	font-size: 1px !important;
+}
+
+
+/* Responsive Styles */
+
+@media(max-width:991px){
+    .carousel {
+    display: none;
+    }
+    .logo {
+    margin-bottom: -20px;
+    margin-top: 15px
+    }
+    .btn {
+    font-size:10px;}
+
+    h3 {font-size: 18px;}
+    p {font-size: 14px;}
+}
+
+@media(min-width:992px){
+    .logo {
+    display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}

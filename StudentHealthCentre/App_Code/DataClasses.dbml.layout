@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="777bdae7-380c-4a22-afe7-70fb1795b3d0" absoluteBounds="1.5, 1.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/GP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e84cacd2-0a55-48ab-a4dc-5f96581e2904" absoluteBounds="1.5149999999999997, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a094fd8f-fd8c-47a4-89ae-b65ddb2b1ef7" absoluteBounds="5.125, 4.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="359f39e4-3776-4836-b96a-f09016495f50" absoluteBounds="5.14, 4.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8263c0c-f93b-4d64-93ab-393b58610bb0" absoluteBounds="5.125, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DataClassesDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18324317-e6f0-421d-9536-f6f8077e2493" absoluteBounds="5.14, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 3.6651025390625); (6.125 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/Patient/Patient_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="c8263c0c-f93b-4d64-93ab-393b58610bb0" />
+        <classShapeMoniker Id="a094fd8f-fd8c-47a4-89ae-b65ddb2b1ef7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 2.53929768880208); (5.125 : 2.53929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DataClassesDataContext/GP/GP_Patient" />
+      <nodes>
+        <classShapeMoniker Id="777bdae7-380c-4a22-afe7-70fb1795b3d0" />
+        <classShapeMoniker Id="c8263c0c-f93b-4d64-93ab-393b58610bb0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

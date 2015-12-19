@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Master Page</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.changeimagebuttons.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+    <!-- Header -->
+        <!-- Carousel -->
+        <header class="col-lg-12 carousel slide">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active"><a href="Index.aspx"><img src="./img/slide01.png"/></a></div>
+                <div class="item"><a href="Index.aspx"><img src="./img/slide02.png"/></a></div>
+                <div class="item"><a href="Index.aspx"><img src="./img/slide03.png"/></a></div>
+            </div>
+        </header>
+
+        <!-- Logo (For future Mobile & Tablet Versions) -->
+        <header>
+            <div class="col-lg-12 logo">
+                <img src="img/logo.png" class="img-responsive img-center" /></div>
+        </header>
+
+        <!-- Patient Logged in Label & Logout Button-->
+        <form runat="server">
+            <div class="col-lg-12">
+                <asp:ImageButton ID="LogoutButton" runat="server" CssClass="btn-logout" OnClick="MyBtnHandler" ImageUrl="./img/logout.png" Visible="false" />
+                <asp:HyperLink ID="HyperLink" runat="server" NavigateUrl="~/AdminPanel.aspx" ForeColor="#151515" Font-Size="17px" CssClass="link logout-label" Visible="false">Admin Panel</asp:HyperLink>
+
+                <asp:Label ID="PatientLabel" runat="server" CssClass="logout-label" Visible="false"></asp:Label>
+
+                <!-- Page Title -->
+                <asp:ContentPlaceHolder ID="header" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <!-- Page Content -->
+            <asp:Panel ID="Panel" runat="server" CssClass="col-lg-12">
+                <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+            </asp:Panel>
+        </form>
+
+        <!-- Footer -->
+        <div class="col-lg-12">
+            <footer>
+                <p>
+                    Copyright &copy;
+                    <asp:Label runat="server" CssClass="glyphicon glyphicon-copyright-mark" ForeColor="White"></asp:Label>
+                    Student Health Centre 2015  - María Díaz
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
