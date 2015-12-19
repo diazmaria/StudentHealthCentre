@@ -1,4 +1,4 @@
-## Student Health Centre Booking System
+# Student Health Centre Booking System
 ![Image](http://i1030.photobucket.com/albums/y369/MariaPhotoB/logo_zpsrtd6m0rh.png)
 
 ### Description
@@ -20,9 +20,9 @@ This project is licensed under the [Apache 2 License](http://www.apache.org/lice
 You must have installed and configured Visual Studio, Microsoft SQL Server and Microsoft SQL Server Management Studio Express.
 
 1. Clone the repository or download the zip file and extract it.
-2. Open Microsoft SQL Server Management Studio, create a **new server** and a **new database** that you should call `StudentHealthCenter`.
-3. Import the sql file attached into the database.
-4. Open the project into Visual Studio and on the file **Web.config**, replace on ConnectionString: Data Source=MARIA-PC\SQLEXPRESS by your Server Name.
+2. Open Microsoft SQL Server Management Studio, create a new server and a new database that you should call StudentHealthCenter.
+3. Import the .sql file attached in the project into the database.
+4. Open the project into Visual Studio and iin the file Web.config replace ConnectionString: Data Source=MARIA-PC\SQLEXPRESS by your server name.
 6. Once the files have been debuggued press start.
 
 ### Demo
