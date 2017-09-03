@@ -1,5 +1,5 @@
 # Student Health Centre Booking System
-![Image](http://i1030.photobucket.com/albums/y369/MariaPhotoB/logo_zpsrtd6m0rh.png)
+![Image](https://image.ibb.co/kVic8a/logo.png)
 
 ### Description
 This web based system has been designed to manage the **GP appoitment bookings** of an Student Health Centre.
@@ -26,5 +26,5 @@ You must have installed and configured Visual Studio, Microsoft SQL Server and M
 6. Once the files have been debuggued press start.
 
 ### Demo
-![demo](http://i1030.photobucket.com/albums/y369/MariaPhotoB/StudentHealthCentre_zpsvwww49eb.gif)
+![demo](https://thumbs.gfycat.com/BlondWearyGrassspider-size_restricted.gif)
 
